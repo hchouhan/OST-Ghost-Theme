@@ -1,0 +1,232 @@
+/*
+--------------------------------------
+Master Stylesheet
+--------------------------------------
+
+Theme:			Stretch Ghost Theme by Dreams Online Themes
+Version: 		1.0
+
+
+Brown: 		#69605C;
+Blue: 		#3897CC;
+Orange: 	#F28A3E;
+Yellow: 	#FABC43;
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. General - Base Styles
+/*-----------------------------------------------------------------------------------*/
+
+a {
+	color: #3897CC;
+}
+
+a:hover,
+a:active {
+	color: #F28A3E;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Site Header
+/*-----------------------------------------------------------------------------------*/
+
+#ost-site-header {
+	padding: 100px 0 100px;
+
+}
+
+.description {
+	color: #F28A3E;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Navigation
+/*-----------------------------------------------------------------------------------*/
+
+.navbar-default {
+	background-color: transparent;
+	background-color: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+	background-color: rgba(255, 255, 255, .9);
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #69605C;
+}
+
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
+	color: #F28A3E;
+}
+
+.nav-social>li {
+	float: left;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Post
+/*-----------------------------------------------------------------------------------*/
+
+article.post {
+	background-color: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+	background-color: rgba(255, 255, 255, .5);
+	padding: 15px 15px 50px;
+	margin-bottom: 50px;
+	border: 1px solid #FFF;
+}
+
+article .post-title {
+	font-weight: bold;
+	color: #69605C;
+	text-decoration: none !important;
+}
+
+article .post-title a {
+	text-decoration: none;
+}
+
+article h1.post-title {
+	font-size: 3em;
+}
+
+article h2.post-title {
+	font-size: 2.5em;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Post Content
+/*-----------------------------------------------------------------------------------*/
+
+.post-content {
+	padding-top: 25px;
+	color: #69605C;
+	line-height: 1.5em;
+	font-size: 1.2em;
+}
+
+.post-content img {
+	width: 100%;
+}
+
+.post-content table {
+	width: 100%;
+}
+
+.post-meta {
+	padding: 0 0 25px;
+	color: #F28A3E;
+}
+
+
+.post-excerpt {
+	font-size: 1.2em;
+	padding-bottom: 25px;
+	color: #69605C;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Post Footer
+/*-----------------------------------------------------------------------------------*/
+
+.post-footer {
+	margin: 50px -15px -50px;
+	padding: 15px;
+	border-top: 1px solid #69605C;
+}
+
+#ost-post-share h5 {
+	display: inline-block;
+	color: #69605C;
+}
+
+#ost-post-share a {
+	color: #69605C;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+#ost-post-author {
+	background-color: #69605C;
+	border-top: 1px solid #FFF;
+	margin: 15px -15px -15px;
+	padding: 50px 15px;
+	color: #FFF;
+	text-align: center;
+}
+
+#ost-post-author a {
+	color: #FFF;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Pagination
+/*-----------------------------------------------------------------------------------*/
+
+.page-number {
+	padding: 0 25px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Site Footer
+/*-----------------------------------------------------------------------------------*/
+
+
+#ost-site-footer {
+	background-color: #ffffff;
+	margin-top: 50px;
+	border-top: 1px solid #e7e7e7;
+	padding: 50px 0;
+	color: #69605C;
+}
+
+#ost-site-footer p a {
+	color: #F28A3E;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Misc.
+/*-----------------------------------------------------------------------------------*/
+
+.backstretch {
+	background-color: transparent;
+	opacity: 0.10;
+	filter: alpha(opacity=10);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	1. Non Mobile device
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+	article.post {
+		padding: 50px;
+	}
+
+	.post-footer {
+		margin: 50px -50px -50px;
+		padding: 50px;
+		border-top: 1px solid #69605C;
+	}
+
+	#ost-post-author {
+		margin: 50px -50px -50px;
+		padding: 50px 50px 50px;
+		text-align: left;
+	}
+
+	#ost-post-author img {
+		float: left;
+		padding-right: 50px;
+
+	}
+
+	#ost-post-author .author-details {
+		float: left;
+
+	}
+
+}

@@ -1,0 +1,87 @@
+{{!< default}}
+{{! The comment above "< default" means - insert everything in this file into
+	the {body} of the default.hbs template, which contains our header/footer. }}
+
+<!-- Main Content -->
+<main id="content" class="container" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog" >
+
+	<div class="row">
+
+		<div class="col-md-8 col-md-offset-2">
+
+			{{! Everything inside the #post tags pulls data from the post }}
+			{{#post}}
+
+				<!-- Post -->
+				<article class="{{post_class}}" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+
+					<h1 class="post-title text-center" role="heading" itemprop="headline">
+						{{title}}
+					</h1>
+
+					<div class="post-meta text-center">
+						<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time> 
+
+						{{#if tags}}
+							&bull; 
+							<span class="tags">Tagged in 
+							{{#foreach tags}}
+								<span class="tag">{{name}}</span>
+							{{/foreach}}
+							</span>
+						{{/if}}
+					</div>
+
+					<div class="post-content" itemprop="articleBody">
+
+						{{content}}
+
+					</div>
+
+					<footer class="post-footer">
+
+						<div id="ost-post-share" class="text-left">
+							<h5>Share this post</h5>
+							<div class="pull-right">
+							<a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;" target="_blank">
+								<i class="fa fa-twitter-square fa-2x"><span class="sr-only">Share on Twitter</span></i>
+							</a>
+							<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}&t={{encode title}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296'); return false;" target="_blank">
+								<i class="fa fa-facebook-square fa-2x"><span class="sr-only">Share on Facebook</span></i>
+							</a>
+							<a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;" target="_blank">
+								<i class="fa fa-google-plus-square fa-2x"><span class="sr-only">Share on GooglePlus</span></i>
+							</a>
+							</div>
+						</div>
+
+						{{#if author}}
+							<div class="clearfix" id="ost-post-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+								<h3 class="sr-only">Author</h3>
+								{{#if author.image}}
+									<img src="{{author.image}}" class="author-avatar" alt="{{author.name}}">
+								{{/if}}
+								<div class="author-details">
+									<h4 itemprop="name">{{author.name}}</h4>
+									<p>{{author.bio}}</p>
+									{{#if author.website}}
+										<p><a href="{{author.website}}" rel="author" itemprop="url">Vist Site</a></p>
+									{{/if}}
+								</div>
+							</div>
+						{{/if}}
+
+
+					</footer>
+
+				</article>
+				<!-- End of Post -->
+
+			{{/post}}
+
+		</div>
+
+	</div>
+
+</main>
+<!-- End of Main Content -->
