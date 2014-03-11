@@ -10,6 +10,33 @@
 	<meta name="description" content="{{@blog.description}}">
 	<meta name="author" content="{{@blog.title}}">
 
+	{{#if post}}
+	{{#post}}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="{{title}}">
+	<meta name="twitter:description" content="{{excerpt}}">
+	<meta name="twitter:creator" content="{{author.name}}">
+
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{{title}}">
+	<meta property="og:description" content="{{excerpt}}">
+	<meta property="og:site_name" content="{{@blog.title}}">
+	{{/post}}
+	{{else}}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="{{@blog.title}}">
+	<meta name="twitter:description" content="{{@blog.description}}">
+	<meta name="twitter:creator" content="{{@blog.title}}">
+
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{{@blog.title}}">
+	<meta property="og:description" content="{{@blog.description}}">
+	<meta property="og:site_name" content="{{@blog.title}}">
+	<meta property="fb:admins" content="">
+	{{/if}}
+
 	{{! Styles }}
 	<link href="{{asset "css/bootstrap.min.css"}}" rel="stylesheet">
 	<link href="{{asset "css/font-awesome.min.css"}}" rel="stylesheet">
@@ -126,16 +153,6 @@
 	</script>
 	{{/if}}
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-20074887-4', 'harishchouhan.com');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
