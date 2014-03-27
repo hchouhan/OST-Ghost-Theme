@@ -20,6 +20,23 @@ Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [Harish Ch
 * Open Graph Tags to correctly share on social communities
 * Fullscreen background cover
 
+## Important information
+
+This theme contains a few features which may require some additional knowledge or settings.
+
+### Background image
+
+The image displayed in the background is a blog cover image which can be defined in the Ghost settings. 
+
+### Logo area
+
+If a logo is added from the Ghost Settings, then the website name is replaced by the logo.
+
+### Footer area
+
+To remove any credit link edit **default.hbs** file.
+
+
 ## External Resources
 
 * [Bootstrap v3.1.1](http://getbootstrap.com)
