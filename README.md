@@ -1,6 +1,31 @@
 # OST Ghost theme
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [Harish Chouhan](http://www.harishchouhancom/).
+
+**[-- THEME DEMO --](http://ost-ghost-theme.harishchouhan.com/)**
+
+## Download
+
+**Important** All below packages contain the "ost-ghost-theme" directory with the theme which should be moved to the content/themes directory.
+
+[Download v.1.0.0 for Ghost 0.4.1](https://github.com/hchouhan/OST-Ghost-Theme/releases/tag/v1.0.0)
+
+![Screenshot](http://discoverghost.com/content/images/2014/Mar/ost_demo.jpg)
+
+## Features
+
+* Responsive mobile first (Bootstrap)
+* HTML 5 with strong focus on accessibility
+* Proper implementation of WAI-Aria roles & Schema.org
+* Open Graph Tags to correctly share on social communities
+* Fullscreen background cover
+
+## External Resources
+
+* [Bootstrap v3.1.1](http://getbootstrap.com)
+* [Font Awesome 4.0.3](http://fontawesome.io)
+* [Backstretch](http://srobbin.com/jquery-plugins/backstretch/)
+* [jQuery FitVids 1.0.3](http://fitvidsjs.com/)
 
 ## Copyright & License
 
