@@ -1,11 +1,11 @@
 			<!-- Pagination -->
 			<nav class="pagination" role="navigation">
 				{{#if prev}}
-					<a href="{{pageUrl prev}}" class="nav-direction"><i class="fa fa-arrow-left"></i> Newer</a>
+					<a href="{{page_url prev}}" class="nav-direction"><i class="fa fa-arrow-left"></i> Newer</a>
 				{{/if}}
 					<span class="page-number">Page <b>{{page}}</b> of {{pages}}</span>
 				{{#if next}}
-					<a href="{{pageUrl next}}" class="nav-direction">Older <i class="fa fa-arrow-right"></i></a>
+					<a href="{{page_url next}}" class="nav-direction">Older <i class="fa fa-arrow-right"></i></a>
 				{{/if}}
 			</nav>
 			<!-- // .pagination -->
