@@ -120,6 +120,11 @@ article h2.post-title {
 	color: #F28A3E;
 }
 
+.post-meta time:before {
+	content: " • ";
+	color: #F28A3E;
+}
+
 .tags a {
 	text-decoration: none;
 }
