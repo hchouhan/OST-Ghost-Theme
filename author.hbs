@@ -8,6 +8,10 @@
 
 		<div class="col-md-8 col-md-offset-2">
 
+	        <header class="tag-archive-header">
+	            <h4>Tag archive: {{tag.name}}</h4>
+	        </header>
+
 			{{! Each post will be output using this markup }}
 			{{#foreach posts}}
 
@@ -19,8 +23,6 @@
 					</h2>
 
 					<div class="post-meta">
-						<span class="author">by <a href="{{@blog.url}}/author/{{author.slug}}">{{author.name}}</a></span>
-						
 						<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time> 
 
 						{{#if tags}}
@@ -31,8 +33,6 @@
 								{{/foreach}}
 							</span>
 						{{/if}}
-
-
 					</div>
 
 					<div class="post-excerpt text-left" itemprop="description">

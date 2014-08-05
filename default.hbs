@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	{{! Document Settings }}
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,21 +139,20 @@
 </footer>
 <!-- End of Site Footer -->
 
-	{{! Ghost outputs important scripts and data with this tag }}
-	{{ghost_foot}}
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
 
-	{{! Scripts }}
-	<script src="{{asset "js/bootstrap.min.js"}}"></script>
-	<script src="{{asset "js/jquery.backstretch.js"}}"></script>
-	<script src="{{asset "js/jquery.fitvids.js"}}"></script>
-	<script src="{{asset "js/index.js"}}"></script>
+{{! Scripts }}
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script src="{{asset "js/jquery.backstretch.js"}}"></script>
+<script src="{{asset "js/jquery.fitvids.js"}}"></script>
+<script src="{{asset "js/index.js"}}"></script>
 
-	{{#if @blog.cover}}
-	<script>
-		$.backstretch("{{@blog.cover}}");
-	</script>
-	{{/if}}
-
+{{#if @blog.cover}}
+<script>
+	$.backstretch("{{@blog.cover}}");
+</script>
+{{/if}}
 
 </body>
 </html>
