@@ -8,6 +8,8 @@ Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [Harish Ch
 
 **Important** All below packages contain the "ost-ghost-theme" directory with the theme which should be moved to the content/themes directory.
 
+[Download v.1.2.0 for Ghost 0.5.0 RC1](https://github.com/hchouhan/OST-Ghost-Theme/releases/tag/1.2.0)
+
 [Download v.1.1.0 for Ghost 0.4.2](https://github.com/hchouhan/OST-Ghost-Theme/releases/tag/1.1.0)
 
 [Download v.1.0.0 for Ghost 0.4.1](https://github.com/hchouhan/OST-Ghost-Theme/releases/tag/1.0.0)
