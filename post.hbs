@@ -20,6 +20,8 @@
 					</h1>
 
 					<div class="post-meta text-center">
+						<span class="author">by <a href="{{@blog.url}}/author/{{author.slug}}">{{author.name}}</a></span>
+
 						<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time> 
 
 						{{#if tags}}
@@ -57,16 +59,25 @@
 
 						{{#if author}}
 							<div class="clearfix" id="ost-post-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
-								<h3 class="sr-only">Author</h3>
+								
+
 								{{#if author.image}}
-									<img src="{{author.image}}" class="author-avatar" alt="{{author.name}}">
+								<div class="author-image">
+									<a class="author-avatar" href="{{@blog.url}}/author/{{author.slug}}" style="background-image: url({{author.image}})"><span class="sr-only">{{author.name}}'s Picture</span></a>
+								</div>
 								{{/if}}
+
 								<div class="author-details">
-									<h4 itemprop="name">{{author.name}}</h4>
-									<p>{{author.bio}}</p>
-									{{#if author.website}}
-										<p><a href="{{author.website}}" rel="author" itemprop="url">Vist Site</a></p>
+									<h4 itemprop="name"><a href="{{@blog.url}}/author/{{author.slug}}">{{author.name}}</a></h4>
+
+									{{#if author.bio}}
+										<p class="author-bio">{{author.bio}}</p>
 									{{/if}}
+
+									{{#if author.location}}<span class="author-location">from {{author.location}}. </span>{{/if}}
+
+									{{#if author.website}}<span class="author-website"><a href="{{author.website}}" rel="author" itemprop="url" target="_blank">Vist Site</a></span>{{/if}}
+
 								</div>
 							</div>
 						{{/if}}

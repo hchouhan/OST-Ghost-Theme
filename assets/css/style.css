@@ -242,15 +242,36 @@ article h2.post-title {
 		text-align: left;
 	}
 
-	#ost-post-author img {
-		float: left;
-		padding-right: 50px;
 
+
+	#ost-post-author .author-image {
+		position: relative;
+		width: 90px;
+		height: 90px;
+		margin-left: 40px;
+		box-shadow: none;
+		float: right;
+	}
+
+	.author-image a {	
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
 	}
 
 	#ost-post-author .author-details {
-		float: left;
+		
+	}
 
+	.author-location,
+	.author-website {
+		font-style: italic;
+	}
+
+	.author-bio {
+		margin-top: 10px;
 	}
 
 }
