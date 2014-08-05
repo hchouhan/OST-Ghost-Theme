@@ -1,0 +1,40 @@
+{{! Each post will be output using this markup }}
+{{#foreach posts}}
+
+	<!-- Post -->
+	<article class="{{post_class}}" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+
+		<h2 class="post-title" role="heading" itemprop="headline">
+			<a href="{{url}}" rel="bookmark" itemprop="url">{{{title}}}</a>
+		</h2>
+
+		<div class="post-meta">
+			<span class="author">by <a href="{{@blog.url}}/author/{{author.slug}}">{{author.name}}</a></span>
+
+			<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time> 
+
+			{{#if tags}}
+				&bull; 
+				<span class="tags">Tagged in
+					{{#foreach tags}}
+						<a href="{{url}}" class="tag" rel="tag">{{name}}</a>
+					{{/foreach}}
+				</span>
+			{{/if}}
+		</div>
+
+		<div class="post-excerpt text-left" itemprop="description">
+			<p>{{excerpt words="50"}} &hellip;</p> 
+		</div>
+
+		<div class="read-more">
+			<a href="{{url}}" class="btn btn-primary" title="Continue Reading {{{title}}}">Continue Reading</a>
+		</div>
+
+	</article>
+	<!-- End of Post -->
+
+{{/foreach}}
+
+{{!! After all the posts, we have the previous/next pagination links }}
+{{pagination}}

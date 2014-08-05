@@ -9,47 +9,11 @@
 		<div class="col-md-8 col-md-offset-2">
 
 	        <header class="tag-archive-header">
-	            <h4>Tag archive: {{tag.name}}</h4>
+	            <h4>Posts by {{author.name}}</h4>
 	        </header>
 
-			{{! Each post will be output using this markup }}
-			{{#foreach posts}}
-
-				<!-- Post -->
-				<article class="{{post_class}}" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-
-					<h2 class="post-title" role="heading" itemprop="headline">
-						<a href="{{url}}" rel="bookmark" itemprop="url">{{{title}}}</a>
-					</h2>
-
-					<div class="post-meta">
-						<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time> 
-
-						{{#if tags}}
-							&bull; 
-							<span class="tags">Tagged in 
-								{{#foreach tags}}
-									<a href="{{url}}" class="tag" rel="tag">{{name}}</a>
-								{{/foreach}}
-							</span>
-						{{/if}}
-					</div>
-
-					<div class="post-excerpt text-left" itemprop="description">
-						<p>{{excerpt words="50"}} &hellip;</p> 
-					</div>
-
-					<div class="read-more">
-						<a href="{{url}}" class="btn btn-primary" title="Continue Reading {{{title}}}">Continue Reading</a>
-					</div>
-
-				</article>
-				<!-- End of Post -->
-
-			{{/foreach}}
-
-			{{!! After all the posts, we have the previous/next pagination links }}
-			{{pagination}}
+			{{! The tag below includes the post loop - partials/loop.hbs }}
+			{{> "loop"}}
 
 		</div>
 
