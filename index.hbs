@@ -1,18 +1,13 @@
 {{!< default}}
-{{! The comment above "< default" means - insert everything in this file into
-	the {body} of the default.hbs template, which contains our header/footer. }}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 <main id="content" class="text-center container" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog" >
-
 	<div class="row">
-
 		<div class="col-md-8 col-md-offset-2">
 
 			{{! The tag below includes the post loop - partials/loop.hbs }}
 			{{> "loop"}}
 
 		</div>
-
 	</div>
-
 </main>
