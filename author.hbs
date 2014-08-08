@@ -1,22 +1,17 @@
 {{!< default}}
-{{! The comment above "< default" means - insert everything in this file into
-	the {body} of the default.hbs template, which contains our header/footer. }}
+{{! The comment above means - insert everything in this file into the {body} of the default.hbs template }}
 
 <main id="content" class="text-center container" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog" >
-
 	<div class="row">
-
 		<div class="col-md-8 col-md-offset-2">
 
 	        <header class="tag-archive-header">
-	            <h4>Posts by {{author.name}}</h4>
+	            <h4>{{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} by {{author.name}}</h4>
 	        </header>
 
 			{{! The tag below includes the post loop - partials/loop.hbs }}
 			{{> "loop"}}
 
 		</div>
-
 	</div>
-
 </main>
