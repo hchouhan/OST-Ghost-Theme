@@ -32,7 +32,7 @@ This theme contains a few features which may require some additional knowledge o
 
 ### Background image
 
-The image displayed in the background is a blog cover image which can be defined in the Ghost settings. 
+The image displayed in the background is a blog cover image which can be defined in the Ghost settings.
 
 ### Logo area
 
@@ -52,7 +52,7 @@ To remove any credit link edit **default.hbs** file.
 
 ## Copyright & License
 
-Copyright (C) 2014 Harish Chouhan & OSTraining.com - Released under the MIT License.
+Copyright (C) 2014 Harish Chouhan & OSTraining.com - Released under GNU General Public License v2 or later
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
