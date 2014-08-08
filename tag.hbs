@@ -6,7 +6,7 @@
 		<div class="col-md-8 col-md-offset-2">
 
 			<section class="archive-header">
-				<h4>Tag archive: {{tag.name}}</h4>
+				<h4>Tag archive: {{tag.name}} - {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}</h4>
 			</section>
 
 			{{! The tag below includes the post loop - partials/loop.hbs }}
