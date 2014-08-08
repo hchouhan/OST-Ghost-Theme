@@ -220,7 +220,7 @@ article h2.post-title {
 	filter: alpha(opacity=10);
 }
 
-.tag-archive-header h4 {
+.archive-header h4 {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
