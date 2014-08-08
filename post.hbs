@@ -25,7 +25,7 @@
 							&bull;
 							<span class="tags">Tagged in
 							{{#foreach tags}}
-								<a href="{{url}}" class="tag">{{name}}</a>
+								<a href="{{url}}" class="tag">{{name}}</a>,
 							{{/foreach}}
 							</span>
 						{{/if}}
@@ -71,6 +71,7 @@
 									{{#if author.location}}<span class="author-location">from {{author.location}}. </span>{{/if}}
 									{{#if author.website}}<span class="author-website"><a href="{{author.website}}" rel="author" itemprop="url" target="_blank">Vist Site</a></span>{{/if}}
 								</div>
+
 							</div>
 						{{/if}}
 

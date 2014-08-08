@@ -11,20 +11,20 @@
 		<div class="post-meta">
 			<span class="author">by <a href="{{@blog.url}}/author/{{author.slug}}">{{author.name}}</a></span>
 
-			<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time> 
+			<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"><i class="icon-time"></i> {{date format="Do MMMM, YYYY"}}</time>
 
 			{{#if tags}}
-				&bull; 
+				&bull;
 				<span class="tags">Tagged in
 					{{#foreach tags}}
-						<a href="{{url}}" class="tag" rel="tag">{{name}}</a>
+						<a href="{{url}}" class="tag" rel="tag">{{name}}</a>,
 					{{/foreach}}
 				</span>
 			{{/if}}
 		</div>
 
 		<div class="post-excerpt text-left" itemprop="description">
-			<p>{{excerpt words="50"}} &hellip;</p> 
+			<p>{{excerpt words="50"}} &hellip;</p>
 		</div>
 
 		<div class="read-more">
