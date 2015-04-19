@@ -2,7 +2,7 @@
 {{! The comment above means - insert everything in this file into the {body} of the default.hbs template }}
 
 <!-- Main Content -->
-<main id="content" class="container" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog" >
+<main id="content" class="text-center container" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog" >
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 
@@ -10,7 +10,7 @@
 			{{#post}}
 
 				<!-- Post -->
-				<article class="{{post_class}}" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+				<article class="{{post_class}} text-left" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 
 					<h1 class="post-title text-center" role="heading" itemprop="headline">
 						{{title}}
@@ -79,6 +79,15 @@
 
 				</article>
 				<!-- End of Post -->
+
+				<nav class="pagination" role="navigation">
+					{{#prev_post}}
+						<a href="{{url}}" class="nav-direction"><i class="fa fa-arrow-left"></i> Previous Post</a>
+					{{/prev_post}}
+					{{#next_post}}
+						<a href="{{url}}" class="nav-direction">Next Post <i class="fa fa-arrow-right"></i></a>
+					{{/next_post}}
+				</nav>
 
 			{{/post}}
 
