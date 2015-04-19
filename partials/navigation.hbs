@@ -1,0 +1,45 @@
+<!-- Main Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+	<div class="container">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<ul class="nav navbar-nav">
+				{{#foreach navigation}}
+					<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+				{{/foreach}}
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right nav-social">
+				<li>
+					<a href="https://twitter.com/OSTraining" target="_blank"><i class="fa fa-twitter-square fa-lg"></i><span class="sr-only">Follow us on Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/ostraining" target="_blank"><i class="fa fa-facebook-square fa-lg"></i><span class="sr-only">Like us on Facebook</span></a>
+				</li>
+				<li>
+					<a href="http://google.com/+Ostraining" target="_blank"><i class="fa fa-google-plus-square fa-lg"></i><span class="sr-only">Follow us on GooglePlus</span></a>
+				</li>
+				<li>
+					<a href="{{@blog.url}}/rss/" target="_blank"><i class="fa fa-rss-square fa-lg"></i><span class="sr-only">Subscribe to our RSS Feed</span></a>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+</nav>
