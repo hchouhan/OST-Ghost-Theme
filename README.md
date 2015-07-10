@@ -1,6 +1,6 @@
 # OST Ghost theme
 
-Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [Harish Chouhan](http://www.harishchouhancom/)
+Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [Harish Chouhan](http://www.harishchouhancom/).
 
 **[-- THEME DEMO --](http://ost-ghost-theme.harishchouhan.com/)**
 
