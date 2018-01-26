@@ -1,15 +1,35 @@
 {
-    "name": "ost-ghost-theme",
-    "description": "A basic theme created for Ghost",
-    "version": "1.2.2",
-    "engines": {
-        "ghost": ">=1.0.0"
+	"name": "ost-ghost-theme",
+	"description": "A basic theme created for Ghost",
+    "demo": "https://ost.harishchouhan.com/",
+	"version": "1.2.2",
+	"engines": {
+		"ghost": ">=1.20.0"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Themeist",
+		"email": "support@themeist.com",
+		"url": "https://themeist.com"
+	},
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Blog"
+        ]
     },
-    "license": "MIT",
-    "author": {
-        "email": "hello@dreasmedia.in"
+    "keywords": [
+        "ghost",
+        "theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hchouhan/OST-Ghost-Theme.git",
     },
-    "config": {
-        "posts_per_page": 10
-    }
+    "bugs": "https://github.com/hchouhan/OST-Ghost-Theme/issues",
+    "contributors": "https://github.com/hchouhan/OST-Ghost-Theme/graphs/contributors",
+	"config": {
+		"posts_per_page": 10,
+	}
 }
