@@ -1,4 +1,15 @@
 {
-  "name": "OST Ghost",
-  "version": "1.2.2"
+    "name": "ost-ghost-theme",
+    "description": "A basic theme created for Ghost",
+    "version": "1.2.2",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "email": "hello@dreasmedia.in"
+    },
+    "config": {
+        "posts_per_page": 10
+    }
 }
