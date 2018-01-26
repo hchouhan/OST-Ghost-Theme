@@ -2,7 +2,7 @@
 	"name": "ost-ghost-theme",
 	"description": "A basic theme created for Ghost",
     "demo": "https://ost.harishchouhan.com/",
-	"version": "1.2.2",
+	"version": "1.3.0",
 	"engines": {
 		"ghost": ">=1.20.0"
 	},
